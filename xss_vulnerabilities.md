@@ -4,7 +4,7 @@ FILE UPLOAD XSS:
 
 	Issue: The idea behind this exploit is that you can get someone to click this link, which will cause them to unknowingly open up and run whatever code you've written it (malicious or not). Its quite devious, as it appears to be coming from a potential trusted source.
 
-	Solution: Host the file on a different domain, so that its easy to tell if the file/page/link is coming from a trusted source, or a different one.::
+	Solution: Host the file on a different domain, so that its easy to tell if the file/page/link is coming from a trusted source, or a different one.         ::
 
 REFLECTED XSS:
 	So this attack should normally require some sort of encoding, but unfortunatley, gruyere is SUPER vulnerable, and the devs didnt try in the slightest, so the basic <script>alert(1)</script> works here
